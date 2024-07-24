@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E057D0532C519D1F00FF68C2 /* AccountBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E057D0522C519D1F00FF68C2 /* AccountBalance.swift */; };
+		E057D0552C51A90C00FF68C2 /* AccountBalanceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E057D0542C51A90C00FF68C2 /* AccountBalanceSpec.swift */; };
 		E0B14F112C309370003A3709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B14F102C309370003A3709 /* AppDelegate.swift */; };
 		E0B14F132C309370003A3709 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B14F122C309370003A3709 /* SceneDelegate.swift */; };
 		E0B14F152C309370003A3709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B14F142C309370003A3709 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		E0B14F282C309376003A3709 /* CourseUnitTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B14F272C309376003A3709 /* CourseUnitTestsTests.swift */; };
 		E0B14F322C309376003A3709 /* CourseUnitTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B14F312C309376003A3709 /* CourseUnitTestsUITests.swift */; };
 		E0B14F342C309376003A3709 /* CourseUnitTestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B14F332C309376003A3709 /* CourseUnitTestsUITestsLaunchTests.swift */; };
+		E0B14F412C31C81A003A3709 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B14F402C31C81A003A3709 /* StringUtils.swift */; };
+		E0B14F452C320D5F003A3709 /* StringUtilsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B14F442C320D5F003A3709 /* StringUtilsSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E057D0522C519D1F00FF68C2 /* AccountBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalance.swift; sourceTree = "<group>"; };
+		E057D0542C51A90C00FF68C2 /* AccountBalanceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceSpec.swift; sourceTree = "<group>"; };
 		E0B14F0D2C309370003A3709 /* CourseUnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseUnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B14F102C309370003A3709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0B14F122C309370003A3709 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		E0B14F2D2C309376003A3709 /* CourseUnitTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseUnitTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B14F312C309376003A3709 /* CourseUnitTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseUnitTestsUITests.swift; sourceTree = "<group>"; };
 		E0B14F332C309376003A3709 /* CourseUnitTestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseUnitTestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0B14F402C31C81A003A3709 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		E0B14F442C320D5F003A3709 /* StringUtilsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtilsSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,8 @@
 				E0B14F102C309370003A3709 /* AppDelegate.swift */,
 				E0B14F122C309370003A3709 /* SceneDelegate.swift */,
 				E0B14F142C309370003A3709 /* ViewController.swift */,
+				E0B14F402C31C81A003A3709 /* StringUtils.swift */,
+				E057D0522C519D1F00FF68C2 /* AccountBalance.swift */,
 				E0B14F162C309370003A3709 /* Main.storyboard */,
 				E0B14F192C309375003A3709 /* Assets.xcassets */,
 				E0B14F1B2C309375003A3709 /* LaunchScreen.storyboard */,
@@ -114,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				E0B14F272C309376003A3709 /* CourseUnitTestsTests.swift */,
+				E0B14F442C320D5F003A3709 /* StringUtilsSpec.swift */,
+				E057D0542C51A90C00FF68C2 /* AccountBalanceSpec.swift */,
 			);
 			path = CourseUnitTestsTests;
 			sourceTree = "<group>";
@@ -258,9 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B14F412C31C81A003A3709 /* StringUtils.swift in Sources */,
 				E0B14F152C309370003A3709 /* ViewController.swift in Sources */,
 				E0B14F112C309370003A3709 /* AppDelegate.swift in Sources */,
 				E0B14F132C309370003A3709 /* SceneDelegate.swift in Sources */,
+				E057D0532C519D1F00FF68C2 /* AccountBalance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0B14F282C309376003A3709 /* CourseUnitTestsTests.swift in Sources */,
+				E0B14F452C320D5F003A3709 /* StringUtilsSpec.swift in Sources */,
+				E057D0552C51A90C00FF68C2 /* AccountBalanceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
