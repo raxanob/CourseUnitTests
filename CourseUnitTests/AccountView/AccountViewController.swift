@@ -9,6 +9,14 @@ import UIKit
 
 class AccountViewController: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            titleLabel.isHidden = false
+            titleLabel.accessibilityIdentifier = "Titulo"
+        }
+    }
+    var isHideen = false
+    
     var viewModel: AccountViewModelProtocol?
     
     override func viewDidLoad() {
@@ -25,5 +33,8 @@ class AccountViewController: UIViewController {
     
     @IBAction func loginButtonAction(_ sender: Any) {
         viewModel?.loginButtonTap()
+        isHideen.toggle()
+        titleLabel.isHidden = isHideen
     }
 }
+

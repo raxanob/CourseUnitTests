@@ -25,9 +25,7 @@ class AccountViewModelMock: AccountViewModelProtocol {
 }
 
 class AccountViewControllerSpec: QuickSpec {
-    
-    //setUpWithError sempre e chamado antes
-    
+        
     override func spec() {
         describe("AccountViewController") {
             var sut: AccountViewController!

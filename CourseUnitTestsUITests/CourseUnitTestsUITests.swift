@@ -27,7 +27,24 @@ final class CourseUnitTestsUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        //primeiro butao: app.buttons.firstMath
+        //butao que o titulo seja login
+        app.buttons["Login"]
+        app.staticTexts["Titulo"]
+        
+        XCTAssertFalse(app.staticTexts["Titulo"].exists)
+        app.buttons["Login"].tap()
+        XCTAssertTrue(app.staticTexts["Titulo"].exists)
+        app.buttons["Login"].tap()
+        XCTAssertFalse(app.staticTexts["Titulo"].exists)
+
+        // seguindo o titulo so
+            //XCTAssertEqual(app.staticTexts["Titulo"].label, "Titulo")
+        
+        //dentro das subviews os botoes 
+            //app.scrollViews.descendants(matching: .button)
+        //ignora os botoes dentro das subviews
+            //app.scrollViews.children(matching: .button)
     }
 
 //    func testLaunchPerformance() throws {
