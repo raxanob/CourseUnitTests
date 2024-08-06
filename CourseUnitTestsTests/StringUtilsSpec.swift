@@ -26,7 +26,7 @@ final class StringUtilsSpec: XCTestCase {
     func testIsValidEmail() {
         let email: String = "curso@gmail.com"
         let value = email.isValidEmail()
-        XCTAssertFalse(value, "Nao é um email valido")
+        XCTAssertTrue(value, "É um email valido")
     }
     
 }
